@@ -1,0 +1,289 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    background-color: black;
+  height: 100%;
+  }
+  .page {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: black;
+    width: 100vw;
+  }
+
+.blood {
+    text-align: center;
+    font-weight: 900;
+    max-width: 80vw;
+    
+    font-size: 7vw;
+    margin: auto;
+    margin-left: -2rem;
+  filter: url(#goo);
+  position: relative;
+  letter-spacing: .4rem;
+  color: #880808;
+  text-transform: uppercase;
+
+}
+.blood-div {
+    margin: auto;
+    max-width: 40vw;
+    max-height: 50vh;
+    position: relative;
+}
+.header {
+    text-shadow: 3px 3px 0 #676565, 6px 6px 0 rgb(139, 144, 139),
+      9px 9px rgb(22, 107, 22), 12px 12px 0  rgb(102, 229, 102);
+     font-family: papyrus;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+     margin: auto;
+     margin-top: 3rem;
+    color: white;
+    animation: shadows 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+    max-width: 80vw;
+    font-size: 3rem;
+  }
+
+  .drop {
+    width: .3em; height: .3em;
+    border-radius: 0 100% 100% 100%;
+    background-color: #880808;
+    position: absolute;
+ 
+    animation: drop 3s infinite both;
+  
+    &:nth-child(1) {
+        left: 30%;
+        top: 56%;
+    }
+  
+    &:nth-child(2) {
+      left: 65%;
+      top: 56%;
+      animation-delay: -.4s;
+    }
+  
+    &:nth-child(3) {
+        top: 56%;
+      left: 92%;
+      animation-delay: -1.5s;
+    }
+  
+    &:nth-child(4) {
+        left: 5%;
+        top: 56%;
+      animation-delay: -.8s;
+    }
+  
+    &:nth-child(5) {
+      left: 80%;
+      top: 47.5%;
+      animation-delay: -1.3s;
+    }
+  }
+  
+  @keyframes drop {
+    0% {
+      transform: translateY(0) scaleX(.85) rotate(45deg);
+      animation-timing-function: ease-out;
+    }
+    60% {
+      transform: translateY(120%) scaleX(.85) rotate(45deg);
+      animation-timing-function: ease-in;
+    }
+    80%, 100% {
+      transform: translateY(60vh) scaleX(.85) rotate(45deg);
+    }
+  }
+  .wave {
+    margin-top: 5rem;
+    position: relative;
+    opacity: 0;
+    top: 0;
+      width: 2px;
+      height: 1px;
+    border: #ad1010 7px solid;
+      -moz-border-radius: 150px / 75px;
+      -webkit-border-radius: 150px / 75px;
+      border-radius: 150px / 75px;
+    -moz-animation-name: ripple;
+    -webkit-animation-name: ripple;
+    animation-name: ripple;
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  .wave:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    top: -5px;
+    left: -5px;
+      width: 1px;
+      height: .5px;
+    border: #cf0707 5px solid;
+      -moz-border-radius: 150px / 75px;
+      -webkit-border-radius: 150px / 75px;
+      border-radius: 150px / 75px;
+    -moz-animation-name: ripple-2;
+    -webkit-animation-name: ripple-2;
+    animation-name: ripple-2;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes ripple {
+      from {
+        opacity: 1;
+      }
+      to {
+        width: 100px;
+        height: 50px;
+        border-width: 1px;
+        top: -100px;
+        opacity: 0;
+      }
+
+  }
+  
+  @keyframes ripple-2 {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+    100% {
+        width: 40px;
+        height: 20px;
+        border-width: 1px;
+        top: 20px;
+        left: 30px;
+    }
+   
+  }
+.pool-bg {
+    margin: auto;
+    height: 30vh;
+    max-width: 90vw;
+    background-color: #880808;
+    border-top-left-radius: 70% ; 
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 20%; 
+    border-bottom-right-radius: 50%;
+    width: 160%; overflow: hidden; 
+    position: relative; 
+    
+}
+  .pool {
+    position: absolute;
+    width: 20%;
+    bottom: -35%;
+    left: 5%;
+    background-color: #880808;
+  }
+
+  .pool-2 {
+    position: absolute;
+    background-color: #880808;
+    left: 40%;
+    bottom: 15%;
+  }
+ .pool-3 {
+    max-width: 20%;
+    margin: auto; 
+    bottom: 12%;
+    left: 80%;
+    background-color: #880808;
+    position: absolute;
+ }
+
+  @keyframes shadows {
+    0% {
+      text-shadow: none;
+    }
+    10% {
+      transform: translate(-3px, -3px);
+      text-shadow: 3px 3px 0 #676565;
+    }
+    20% {
+        transform: translate(-6px, -6px);
+        text-shadow: 3px 3px 0 rgb(139, 144, 139),
+          6px 6px 0 rgb(102, 229, 102);
+      }
+      30% {
+        transform: translate(-9px, -9px);
+        text-shadow: 3px 3px 0 #676565,
+          6px 6px 0  rgb(22, 107, 22), 9px 9px rgb(102, 229, 102);
+      }
+      40% {
+        transform: translate(-12px, -12px);
+        text-shadow: 3px 3px 0 #676565,
+          6px 6px 0  rgb(139, 144, 139), 9px 9px rgb(239, 243, 239)
+          12px 12px 0 rgb(102, 229, 102);
+      }
+      50% {
+        transform: translate(-12px, -12px);
+        text-shadow: 3px 3px 0 #676565,
+          6px 6px 0   9px 9px rgb(139, 144, 139), rgb(22, 107, 22),
+          12px 12px 0 rgb(102, 229, 102);
+      }
+      60% {
+        text-shadow: 3px 3px 0 #676565,
+          6px 6px 0   9px 9px rgb(139, 144, 139), rgb(22, 107, 22),
+          12px 12px 0 rgb(102, 229, 102);
+      }
+      70% {
+        text-shadow: 3px 3px 0 #676565,
+          6px 6px 0 rgb(22, 107, 22), 9px 9px rgb(102, 229, 102);
+      }
+      80% {
+        text-shadow: 3px 3px 0 #676565,
+          6px 6px 0 rgb(22, 107, 22);
+      }
+      90% {
+        text-shadow: 3px 3px 0 #676565;
+      }
+    100% {
+      text-shadow: none;
+    }
+  }
+  .filler {
+    position: relative;
+    margin: auto;
+    margin-top: 3rem;
+    height: fit-content;
+    width: 35vw;
+  }
+  h2 {
+    color: white;
+    text-align: left;
+  }
+  ul {
+    color: white;
+    text-align: left;
+  }
+  li {
+    margin-bottom: 1rem;
+  }

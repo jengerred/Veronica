@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.navbar {
+  width: 100vw;
+  padding: 1rem;
+  background-color:  rgb(15, 75, 15);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
+

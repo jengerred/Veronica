@@ -1,0 +1,196 @@
+
+.body {
+    text-align: center;
+    background-color: rgb(166, 89, 234);
+   color: rgb(15, 75, 15);
+   border: 15px solid rgb(15, 75, 15)  ;
+   border-radius: 1rem;
+   outline-style: solid;
+   outline-color:rgb(39, 156, 39);
+   outline-width: 5px;
+  }
+  h1 {
+    color: rgb(15, 75, 15);
+    font-family:Arial, Helvetica, sans-serif;
+  }
+.border {
+    border: 15px solid rgb(39, 156, 39);
+}
+  .author-div {
+    max-width: 800px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  }
+  .author {
+   padding: 1rem;
+   margin-left: 10%;
+   text-align: left;
+   text-shadow: 1px 1px rgb(39, 156, 39);
+  }
+  .header {
+    text-shadow: 3px 3px 0 rgb(18, 93, 18), 6px 6px 0 rgb(95, 201, 95),
+      9px 9px rgb(66, 159, 66), 12px 12px 0 rgb(102, 229, 102);
+     font-family: Haettenschweiler, 'Arial Bold', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: rgb(14, 74, 14);
+    animation: shadows 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+    font-size: 1.5rem;
+  }
+  
+  
+  @keyframes shadows {
+    0% {
+      text-shadow: none;
+    }
+    10% {
+      transform: translate(-3px, -3px);
+      text-shadow: 3px 3px 0 rgb(18, 93, 18);
+    }
+    20% {
+        transform: translate(-6px, -6px);
+        text-shadow: 3px 3px 0 rgb(95, 201, 95),
+          6px 6px 0 rgb(102, 229, 102);
+      }
+      30% {
+        transform: translate(-9px, -9px);
+        text-shadow: 3px 3px 0 rgb(18, 93, 18),
+          6px 6px 0  rgb(66, 159, 66), 9px 9px rgb(102, 229, 102);
+      }
+      40% {
+        transform: translate(-12px, -12px);
+        text-shadow: 3px 3px 0 rgb(18, 93, 18),
+          6px 6px 0  rgb(66, 159, 66), 9px 9px rgb(95, 201, 95), 
+          12px 12px 0 rgb(102, 229, 102);
+      }
+      50% {
+        transform: translate(-12px, -12px);
+        text-shadow: 3px 3px 0 rgb(18, 93, 18),
+          6px 6px 0  rgb(66, 159, 66), 9px 9px rgb(95, 201, 95), 
+          12px 12px 0 rgb(102, 229, 102);
+      }
+      60% {
+        text-shadow: 3px 3px 0 rgb(18, 93, 18),
+          6px 6px 0  rgb(66, 159, 66), 9px 9px rgb(95, 201, 95), 
+          12px 12px 0 rgb(102, 229, 102);
+      }
+      70% {
+        text-shadow: 3px 3px 0 rgb(18, 93, 18),
+          6px 6px 0 rgb(66, 159, 66), 9px 9px rgb(102, 229, 102);
+      }
+      80% {
+        text-shadow: 3px 3px 0 rgb(18, 93, 18),
+          6px 6px 0 rgb(66, 159, 66);
+      }
+      90% {
+        text-shadow: 3px 3px 0 rgb(18, 93, 18);
+      }
+    100% {
+      text-shadow: none;
+    }
+  }
+  
+  
+  
+  .queen {
+    border: 5px solid rgb(15, 75, 15);
+    border-radius: 1rem;
+    box-shadow: 
+    0px 5px 16px 10px rgb(39, 156, 39),
+     10px 10px 100px 10px rgb(39, 156, 39);
+    max-width: 70vw;
+  }
+  
+  
+  img {
+    max-width: 500px;
+    max-height: 400px;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 3rem;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(15, 75, 15);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgb(39, 156, 39);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: rgb(15, 75, 15);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  
+  
+  .copyright {
+    margin-top: 7rem;
+  margin-bottom: 7rem;
+  }
