@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 import Ghost from './Pages/Ghost';
 import NavBar from "./Components/Navbar";
 import './App.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function App() {
   return (
